@@ -2,13 +2,13 @@
 
 <%= form_for (@blog) do |f| %>
  
- <p>タイトル</p>
+ <p>Title</p>
 <%= f.text_field :title %>
  
- <p>本文</p>
+ <p>Body</p>
 <%= f.text_field :body %>
 
-　<p>作成者</p>
+　<p>Author</p>
 <%= f.text_field :author %>
 
 <%= f.submit "送信" %>
