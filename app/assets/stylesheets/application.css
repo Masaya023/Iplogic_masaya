@@ -25,7 +25,9 @@
 a {
   text-decoration: none;
   font-family: -webkit-pictograph;
+  font-style: italic;
 }
+
 .clearfix::after {
   content: "";
   display: block;
@@ -91,11 +93,16 @@ header .headline{
   color: #fff;
   position:relative;
   bottom:60px;
+  font-style: oblique;
+  font-size:medium;
+  font-weight:500;
 }
 .main-visual-name {
   color: #fff;
   position:relative;
   bottom:20px;
+  font-style: oblique;
+  font-family: cursive;
 }
 /*main-visual*/
 
