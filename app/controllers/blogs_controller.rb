@@ -14,6 +14,29 @@ class BlogsController < ApplicationController
   	  redirect_to '/blogs' #商品を渡すのをお願いする
   end
 
+  def show #詳細画面
+      @blog = Blog.find(params[:id])
+  end
+
+  def edit
+  	  @blog = Blog.find(params[:id])
+  end
+
+  def update
+  	  @blog = Blog.find(params[:id])
+      @blog.update(blog_params)
+      redirect_to '/blogs'
+  end	
+
+  def destroy
+  	  @blog = Blog.find(params[:id])
+  	  @blog.destroy
+  	  redirect_to '/blogs'
+  end
+
+  	
+
+
   private # 下は、すべてが影響される
    def blog_params # ストロングパラメーター
   	  params.require(:blog).permit(:title, :body, :author)

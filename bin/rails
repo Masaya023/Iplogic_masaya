@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby2.3
+#!/usr/bin/env ruby
 begin
   load File.expand_path('../spring', __FILE__)
 rescue LoadError => e
@@ -7,3 +7,4 @@ end
 APP_PATH = File.expand_path('../config/application', __dir__)
 require_relative '../config/boot'
 require 'rails/commands'
+
